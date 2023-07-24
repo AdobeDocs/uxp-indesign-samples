@@ -1,0 +1,20 @@
+{
+  "id": "com.adobe.uxp.indesign.command.plugin.starter",
+  "name": "Command Plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "host": [
+    {
+      "app": "ID",
+      "minVersion": "18.5.0"
+    }
+  ],
+  "manifestVersion": 5,
+  "entrypoints": [
+    {
+      "type": "command",
+      "id": "showAlert",
+      "label": "Show Alert"
+    }
+  ]
+}

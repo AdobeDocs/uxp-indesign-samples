@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="index.js"></script>
+</head>
+<style>
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper>* {
+    flex: 0 0 auto;
+    margin: 4px 0;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .row>* {
+    margin: 0 8px;
+  }
+
+  .row>*:first-child {
+    margin-left: 0;
+  }
+
+  .row>*:last-child {
+    margin-right: 0;
+  }
+
+  .row sp-textfield,
+  .row sp-checkbox,
+  .row sp-detail {
+    flex: 1 1 auto;
+  }
+
+  .row sp-button {
+    flex: 0 0 auto;
+  }
+
+  .infoRow {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .webview-result {
+    background-color: gray;
+    margin-top: 30px;
+  }
+
+  #logWebview {
+    padding: 14px;
+    border-radius: 4px;
+    border: 1px solid;
+    font-family: 'Source Code Pro', 'Menlo', 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <sp-heading size="S">View WebView within a dialog or panel.</sp-heading>
+    <sp-divider></sp-divider>
+    <div class="row">
+      <sp-action-button id="openDialogBtn">Show WebView in Dialog</sp-action-button>
+      <sp-action-button id="openPanelBtn">Show WebView in Panel</sp-action-button>
+    </div>
+    <div class="infoRow">
+      <sp-icon name="ui:InfoSmall" size="s" class="icon" style="color: grey;"></sp-icon>
+      <sp-detail size="s" id="note" style="margin-left: 5px;">Make sure the local server is running (Refer README for more details).</sp-detail>
+    </div>
+
+    <div id="webviewInPanel" style="display: none;">
+      <webview id="panelWebview" width="100%" height="280px" src="http://127.0.0.1:7725">
+      </webview>
+
+      <sp-heading size="XS" style="margin-top: 30px;">WebView Actions</sp-heading>
+      <sp-divider></sp-divider>
+      <div class="row">
+        <sp-action-button id="panelCreateTriangleBtn">Create WebGL Triangle</sp-action-button>
+        <sp-action-button id="panelTransformTriangleBtn">Rotate Triangle</sp-action-button>
+      </div>
+    </div>
+
+
+    <div class="webview-result">
+      <sp-heading size="XS">View responses from WebView (within dialog and panel)</sp-heading>
+      <sp-heading size="XXS">Message</sp-heading>
+      <sp-body id="logWebview"></sp-body>
+      <sp-heading size="XXS">Snapshot</sp-heading>
+      <img id="snapshot" width="200" height="200" src=""></img>
+    </div>
+  </div>
+
+  <dialog id="dialog" width="600px">
+    <sp-heading size="M">WebView</sp-heading>
+    <sp-divider size="medium"></sp-divider>
+    <webview id="dialogWebview" style="border: 2px solid black; margin-top:10px;" width="100%" height="475px" 
+      src="http://127.0.0.1:7725" uxpAllowInspector="true"></webview>
+    <sp-divider size="medium"></sp-divider>
+
+
+    <sp-heading size="XS" style="margin-top: 10px;">WebView Actions</sp-heading>
+    <div class="row">
+      <sp-action-button id="dialogCreateTriangleBtn">Create WebGL Triangle</sp-action-button>
+      <sp-action-button id="dialogTransformTriangleBtn">Rotate Triangle</sp-action-button>
+    </div>
+
+    <sp-heading size="XS" style="margin-top: 10px;">Logs</sp-heading>
+    <textarea id="dialogLogs" type="textarea" width="100%" height="50px"></textarea>
+  </dialog>
+</body>
+
+</html>

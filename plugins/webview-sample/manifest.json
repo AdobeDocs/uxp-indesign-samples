@@ -1,0 +1,66 @@
+{
+    "id": "com.adobe.uxp.indesign.webview.sample",
+    "name": "WebView Sample",
+    "version": "1.0.0",
+    "main": "index.html",
+    "manifestVersion": 5,
+    "host":[
+        {
+            "app":"ID", 
+            "minVersion":"18.5.0"
+        },
+        {
+            "app":"PS",
+            "minVersion":"24.1.0"
+        },
+        {
+            "app":"XD",
+            "minVersion":"54.0.0"
+        }
+    ],
+    "requiredPermissions": {
+        "webview": {
+            "allow": "yes",
+            "domains": ["http://127.0.0.1:7725"],
+            "enableMessageBridge": "localAndRemote"
+        }
+    },
+    "entrypoints": [
+        {
+            "type": "panel",
+            "id": "mainPanel",
+            "label": "WebView Sample",
+            "minimumSize": {"width": 600, "height": 850},
+            "maximumSize": {"width": 2000, "height": 2000},
+            "preferredDockedSize": {"width": 600, "height": 700},
+            "preferredFloatingSize": {"width": 600, "height": 700},
+            "icons": [
+                { "width": 32, "height": 32, "path": "images/icon@1x.png",
+                  "scale": [ 1, 2 ],
+                  "theme": [ "dark", "darkest" ],
+                  "species": [ "generic" ]
+                },
+                {
+                  "width": 32, "height": 32, "path": "images/icon@2x.png",
+                  "scale": [ 1, 2 ],
+                  "theme": [ "lightest", "light" ],
+                  "species": [ "generic" ]
+                }
+            ]
+        }
+    ],
+    "icons": [
+        {
+            "width": 32, "height": 32, "path": "images/icon@1x.png",
+            "scale": [ 1, 2 ],
+            "theme": [ "dark", "darkest" ],
+            "species": [ "generic" ]
+        },
+        {
+            "width": 32, "height": 32, "path": "images/icon@2x.png",
+            "scale": [ 1, 2 ],
+            "theme": [ "lightest", "light" ],
+            "species": [ "generic" ]
+        }
+    ]
+}
