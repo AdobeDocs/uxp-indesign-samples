@@ -51,7 +51,7 @@ Switch over to the host app, and the plugin's panel will be running.
 
 ## Deep dive
 
-### manifest permission
+### Manifest permission
 To use WebViews in a plugin, the `webview` permission is necessary in [manifest.json](./manifest.json).
 - webview.allow - Enables WebView access to the plugin.
 - webview.domains - Domain of the web URL.
@@ -64,5 +64,9 @@ In [index.html](./index.html), notice the `uxpAllowInspector` added to the WebVi
 <webview width="100%" height="360px" src="https://www.adobe.com" uxpAllowInspector="true" ></webview>
 ```
 
-### update webview page
+### Update webview page
 If you are making changes to the WebView page (served from the http-server), make sure the http-server doesn't cache. Use `http-server -p 7724 -c-1` to restart the server and disable caching.
+
+### Multi app
+Notice the `host` info in [manifest.json](./manifest.json). It is an array that defines the minimum version of Photoshop and InDesign supported. This enables the plugin to work for multiple applications. 
+However, please note that sharing or distributing a multi-app UXP plugin is not supported yet. Before you create the plugin `.ccx` package, make sure that the `host` is updated to an object, clearly stating only one application. For example, `"host": { "app": "ID", "minVersion": "18.5.0" }`.
