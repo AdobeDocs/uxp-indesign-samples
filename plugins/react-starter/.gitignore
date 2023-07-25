@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+package-lock.json
+
+# TernJS port file
+yarn.lock
+
+## uxp
+dist/
+
+# System Specific
+**/.DS_Store

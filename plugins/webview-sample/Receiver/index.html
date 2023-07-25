@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Receiver</title>
+  <link rel="stylesheet" href="../webgl.css" type="text/css">
+  <script src="index.js" defer></script>
+</head>
+<style>
+  body {
+    color: white;
+    padding: 0 16px;
+  }
+
+  p {
+    color: black;
+    font-size: 15px;
+  }
+
+  .canvas {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .canvasrow {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: baseline;
+  }
+
+  #logWebview {
+    background-color: #EFEFEF;
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', 'Menlo', 'Courier New', Courier, monospace;
+    height: 50px;
+    overflow: scroll;
+  }
+
+  .button {
+    /* align-items: center; */
+    appearance: button;
+    background-color: rgb(253, 253, 253);
+    border-bottom-color: rgb(177, 177, 177);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(177, 177, 177);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(177, 177, 177);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(177, 177, 177);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    display: flex;
+    font-family: adobe-clean, "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, Ubuntu, "Trebuchet MS", "Lucida Grande", sans-serif;
+    font-size: 14px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: 400;
+    height: 32px;
+    letter-spacing: normal;
+    line-height: 18.2px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    min-width: 32px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 1px;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 1px;
+    position: relative;
+    text-align: center;
+    text-decoration-color: rgb(34, 34, 34);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-thickness: auto;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: none;
+    transition-delay: 0s;
+    transition-duration: 0.13s;
+    transition-property: border-color;
+    transition-timing-function: ease-in-out;
+    user-select: none;
+    vertical-align: top;
+    /* width: 80px; */
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+</style>
+
+<body>
+  <p>Hi there! I am about to draw a triangle using Canvas (webGL) here.</p>
+  <div class="canvasrow">
+    <canvas id="my_Canvas" width="480" height="300"></canvas>
+  </div>
+  <div class="row">
+    <input class="button" type="button" name="button" value="Send Canvas Properties"
+      onclick="sendCanvasDetails()">
+    <input class="button" type="button" name="button" value="Send Snapshot" onclick="sendImageData()">
+  </div>
+  <p style="margin: 15px 2px;" id="msg">Message from plugin</p>
+  <div id="logWebview">
+    <p id="rec"></p>
+  </div>
+</body>
+
+</html>
