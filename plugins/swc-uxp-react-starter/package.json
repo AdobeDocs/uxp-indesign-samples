@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "webpack --mode production",
-    "watch": "webpack --watch --mode production"
+    "build": "webpack --mode development",
+    "watch": "webpack --watch --mode development"
   },
   "keywords": [],
   "author": "",
@@ -16,8 +16,6 @@
     "@swc-react/theme": "0.14.8-react.2993",
     "@swc-uxp-wrappers/utils": "1.0.0",
     "@swc-uxp-wrappers/menu": "1.0.0",
-    "@swc-react/dialog": "0.11.12",
-    "@swc-uxp-wrappers/dialog": "1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"

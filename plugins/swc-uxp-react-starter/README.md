@@ -18,7 +18,9 @@ This starter will help you to create a **React** based UXP plugin using Spectrum
 1. Start by installing the dependencies `yarn install`.
 2. Prepare the bundle using Webpack `yarn build`. You will notice a **dist** folder after this step.
 3. (Optional) `yarn watch` to automatically build the project every time you update a source file.
-Note : You might see `Warning` in case of running the project in `development` mode instead of `production` mode for `Dialog` and `Tooltip` components. This shall get resolved with version upgrades of these components.
+
+</br>
+Note : You might see `Warning` or `Error` in case of running the project in `development` mode instead of `production` mode for `Dialog` and `Tooltip` components. This shall get resolved with version upgrades of these components.
 
 **Load the plugin into the application via UDT**
 1. Make sure the application is running and you can see it under 'Connected apps'.
@@ -30,7 +32,7 @@ Note : You might see `Warning` in case of running the project in `development` m
 
 <img width="800" alt="package.json with resolutions block" src="assets/load-plugin-from-developer-tools.png">
 
-<br></br>
+<br></>
 
 You should be able to see a banner in Photoshop plugin.
 <img width="350" alt="package.json with resolutions block" src="assets/menu-starter.png">

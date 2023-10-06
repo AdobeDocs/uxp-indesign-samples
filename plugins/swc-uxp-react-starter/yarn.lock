@@ -1804,7 +1804,7 @@
   dependencies:
     lit "^2.5.0"
 
-"@spectrum-web-components/button-group@0.10.8", "@spectrum-web-components/button-group@^0.10.6-react.75+9897d0a1c", "@spectrum-web-components/button-group@^0.10.7", "@swc-uxp-internal/button-group@npm:@spectrum-web-components/button-group@0.10.8":
+"@spectrum-web-components/button-group@0.10.8", "@spectrum-web-components/button-group@^0.10.6-react.75+9897d0a1c", "@spectrum-web-components/button-group@^0.10.7":
   version "0.10.8"
   resolved "https://registry.yarnpkg.com/@spectrum-web-components/button-group/-/button-group-0.10.8.tgz#f61014f7aca4735c23863c6490b3981b51e207d9"
   integrity sha512-GHOuA+zTJFhCW43JOKZaKZaorVk7FeN1RMS2TAvjOinFpnQGFT8M8VmsidN6ivLM9GeDqi2uW6Q/ihZVnun59g==
@@ -1862,7 +1862,7 @@
   dependencies:
     "@spectrum-web-components/base" "^0.7.5"
 
-"@spectrum-web-components/dialog@0.11.12", "@swc-uxp-internal/dialog@npm:@spectrum-web-components/dialog@0.11.12":
+"@spectrum-web-components/dialog@0.11.12":
   version "0.11.12"
   resolved "https://registry.yarnpkg.com/@spectrum-web-components/dialog/-/dialog-0.11.12.tgz#792d7f78ccb314c19bc9055f2e0dbf0ad31982fd"
   integrity sha512-6GweRvjty8pFfRYWu/D8SU67VrqU9AFABdHd12ZEHowX08FApGIvlOveCxIj1qpvEAzijKG5EnbMuR/XLqaXNw==
@@ -2505,30 +2505,12 @@
     "@swc-uxp-internal/action-button" "npm:@spectrum-web-components/action-button@0.8.7"
     "@swc-uxp-wrappers/button" "1.0.0"
 
-"@swc-uxp-wrappers/button-group@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@swc-uxp-wrappers/button-group/-/button-group-1.0.0.tgz#e4c47bf7ab003d62f200fc222e17a56771c22017"
-  integrity sha512-hCKjk9zt7C2YJn2DYjcZ8/JH0/GgzS8YyqkZnONUY1SEcPFPu46ieqZaHz3/Jlwkpu6Cm5ORf8i6dTwjqPphEA==
-  dependencies:
-    "@swc-uxp-internal/button-group" "npm:@spectrum-web-components/button-group@0.10.8"
-    "@swc-uxp-wrappers/button" "1.0.0"
-
 "@swc-uxp-wrappers/button@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@swc-uxp-wrappers/button/-/button-1.0.0.tgz#e7be6bf1a4121e50534e3e89b70463065ac51ea2"
   integrity sha512-G+2/hYKAc6k7GrxXr7xkSUUJMeeZeUxzj0+QpQbftlyb4FAEyvzbn7yvCTwngjzEcNmd4CIVgIv1dbPS6k3Y9A==
   dependencies:
     "@swc-uxp-internal/button" "npm:@spectrum-web-components/button@0.19.8"
-
-"@swc-uxp-wrappers/dialog@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@swc-uxp-wrappers/dialog/-/dialog-1.0.0.tgz#5875e5b882d3d5cf91cf011f3fa3d65e339977b1"
-  integrity sha512-shfwzn3s9AmF5aYFiClKacD6Dx/Z2kGzeM7RmdUL/LQeYvYRGW5FPOerqJs3S78a4WQoUZlSXlcncGgxkO0XdQ==
-  dependencies:
-    "@swc-uxp-internal/dialog" "npm:@spectrum-web-components/dialog@0.11.12"
-    "@swc-uxp-wrappers/button" "1.0.0"
-    "@swc-uxp-wrappers/button-group" "1.0.0"
-    "@swc-uxp-wrappers/divider" "1.0.0"
 
 "@swc-uxp-wrappers/divider@1.0.0":
   version "1.0.0"

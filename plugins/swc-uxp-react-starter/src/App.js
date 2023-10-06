@@ -18,7 +18,6 @@ import "@spectrum-web-components/theme/theme-light.js";
 import "@spectrum-web-components/theme/express/theme-light.js";
 import "@spectrum-web-components/theme/scale-medium.js";
 import "@spectrum-web-components/theme/express/scale-medium.js";
-import { Dialog } from "@swc-react/dialog";
 import { Theme } from "@swc-react/theme";
 
 function App() {
@@ -35,7 +34,6 @@ function App() {
           <MenuItem>Select Option 4</MenuItem>
           <MenuItem disabled>Disabled Option</MenuItem>
         </Menu>
-        <Dialog>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto eius dignissimos, alias corrupti rerum vero nemo mollitia officiis ipsa provident. Illo, fuga officiis! Blanditiis facere odio esse cumque, similique voluptatum.</Dialog>
       </Theme>
     </div>
   );
