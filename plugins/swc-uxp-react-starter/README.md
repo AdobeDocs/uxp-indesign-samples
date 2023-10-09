@@ -3,7 +3,7 @@
 This starter will help you to create a **React** based UXP plugin using Spectrum Web Component (SWC). It includes setting up the project, integrating the SWC components, and mounting it over the host application - InDesign.
 
 ## Documentation
-- [SWC in UXP](https://developer.adobe.com/photoshop/uxp/2022/uxp-api/reference-spectrum/swc)
+- [SWC in UXP](https://developer.adobe.com/indesign/uxp/reference/uxp-api/reference-spectrum/swc/)
 - [Adobe's list of SWC](https://opensource.adobe.com/spectrum-web-components/index.html)
 
 ## Getting started
@@ -34,13 +34,13 @@ Note : You might see `Warning` or `Error` in case of running the project in `dev
 
 <br></>
 
-You should be able to see a banner in Photoshop plugin.
+You should be able to see a banner in InDesign plugin.
 <img width="350" alt="package.json with resolutions block" src="assets/menu-starter.png">
 
 
 
 ## Add a new component
-You can use any of the supported components listed in [our docs](https://developer.adobe.com/photoshop/uxp/2022/uxp-api/reference-spectrum/swc) by following these steps:
+You can use any of the supported components listed in [our docs](https://developer.adobe.com/indesign/uxp/reference/uxp-api/reference-spectrum/swc/) by following these steps:
 
 1. Use `yarn add` to install the components and its supported version.
 
@@ -163,7 +163,7 @@ function App() {
 ```
 
 
-## Recommended `@swc-react` library  versions can be referred in the [developer documentation](https://developer.adobe.com/photoshop/uxp/2022/uxp-api/reference-spectrum/swc)
+## Recommended `@swc-react` library  versions can be referred in the [developer documentation](https://developer.adobe.com/indesign/uxp/reference/uxp-api/reference-spectrum/swc/)
 
 
 
