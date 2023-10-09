@@ -1,9 +1,9 @@
 # UXP Plugin with Spectrum Web Component
 
-This starter will help you to create a Spectrum Web Component (SWC) based UXP plugin. It includes setting up the project, integrating the SWC components, and mounting it over the host applications - Photoshop.
+This starter will help you to create a Spectrum Web Component (SWC) based UXP plugin. It includes setting up the project, integrating the SWC components, and mounting it over the host applications - InDesign.
 
 ## Documentation
-- [SWC in UXP](https://developer.adobe.com/photoshop/uxp/2022/uxp-api/reference-spectrum/swc)
+- [SWC in UXP](https://developer.adobe.com/indesign/uxp/reference/uxp-api/reference-spectrum/swc/)
 - [Adobe's list of SWC](https://opensource.adobe.com/spectrum-web-components/index.html)
 
 
@@ -29,14 +29,14 @@ This starter will help you to create a Spectrum Web Component (SWC) based UXP pl
 
 <img width="800" alt="load plugin from UDT" src="assets/load-plugin-from-developer-tools.png">
 
-You should be able to see a banner in Photoshop plugin.
+You should be able to see a banner in InDesign plugin.
 
 
-<img width="350" alt="loaded plugin in Photoshop" src="assets/banner-starter.png">
+<img width="350" alt="loaded plugin in InDesign" src="assets/banner-starter.png">
 
 
 ## Add a new component
-You can use any of the supported components listed in [our docs](https://developer.adobe.com/photoshop/uxp/2022/uxp-api/reference-spectrum/swc) by following these steps:
+You can use any of the supported components listed in [our docs](https://developer.adobe.com/indesign/uxp/reference/uxp-api/reference-spectrum/swc/) by following these steps:
 1. Use `yarn add` to install the components and its supported version.
 
 ```javascript
